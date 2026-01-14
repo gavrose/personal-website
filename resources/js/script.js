@@ -44,12 +44,13 @@ const commands = [
     '$ hire gavin.r',
     '$ git add .',
     '$ git checkout work',
-    '$ hello world'
+    '$ hello world',
+    '$hire gavin.r'
 ];
 
 let commandLines = [];
-const fontSize = 14;
-const scrollSpeed = 0.3;
+const fontSize = 16;
+const scrollSpeed = 0.4;
 
 let currentY = 0;
 while (currentY < canvas.height + 100) {
@@ -101,4 +102,5 @@ window.addEventListener('resize', () => {
         });
         currentY += spacing;
     }
+
 });
